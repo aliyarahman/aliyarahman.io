@@ -1,11 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h2>d3 paint:</h2>
-
+<h2>d3 paint.</h2>
+<br><br><br>
 <script>
-	d3.selectAll("h2")
-		.style("font-family", "Helvetica");
+
+	var dataArray = [20, 20, 40, 20, 50];
+	
+	var canvas = d3.select("div")
+			.append("svg")
+			.attr("width", 500)
+			.attr("height", 500);
+
+	var bars = canvas.selectAll("rect")
+			.data(dataArray)
+			.enter()
+				.append("rect")
+				.attr("width", function(d) { return d *10; })
+				.attr("height", 50)
+				.attr("y", function(d, i) { return i * 100 });
 
 </script>
 
