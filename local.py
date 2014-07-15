@@ -6,3 +6,6 @@ application = Flask(__name__) # Must be called 'application' in order to work on
 @application.route('/')
 def index():
   return render_template("index.html")
+
+application.run(debug = True) # Comment this out upon deployment to Elastic Beanstalk
+
