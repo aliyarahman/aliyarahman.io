@@ -1,0 +1,31 @@
+.landing_page_button {width: 30%;
+					  height: 50%;
+					  display: inline-block;
+					  font-size: 3em;
+					  color: #33CCFF;
+					  font-family: Helvetica;
+					  background-color: #FFFF99;
+					  margin: 2em;}
+
+.landing_page_button:hover {box-shadow: 10px 10px 5px #888888;}
+
+.plush_button {background-image: url('MPM1title.png');
+				background-repeat: no-repeat;
+				background-position: center center;}
+
+.menubar	{width: 100%;
+             position: fixed; top:0; left:0;
+             color: #33CCFF;
+             background-color: #FFFF99;}
+
+.menubar h1  {font-family: Helvetica; font-size: 3em;
+              padding-left: 0.5em; }
+
+.internal_menubar	{width:100%;
+	                 background-color: #33CCFF;
+                     color: #FFFF99;
+                     font-family: Helvetica;
+                     font-size: 1.5em;
+                     line-height: 2.5em;
+                     margin-top: 0em;
+                     padding-left: 1em; }
